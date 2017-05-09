@@ -12,6 +12,7 @@
     
     <!-- Import element -->
     <link rel="import" href="/bower_components/google-map/google-map.html"> 
+    <link rel="import" href="/bower_components/google-streetview-pano/google-streetview-pano.html"> 
 </head>
 <body>
 	<nav class="nav">
@@ -88,6 +89,14 @@
 				</div>
 			</div>
 		</section>
+		<google-streetview-pano
+		  api-key="AIzaSyD3E1D9b-Z7ekrT3tbhl_dy8DCXuIuDDRc"
+		  pano-id="F:-UyEV2Q49K9Q/VyB0-_ylNQI/AAAAAAAF9Aw/DsvZZH6-leA15nAILTxj7kUem02mrC_IQCLIB"
+		  heading="282"
+		  pitch="0"
+		  zoom="0"
+		  disable-auto-pan>
+		</google-streetview-pano>
 		<section class="section">
 			<div class="container">
 				<div class="tile is-pulled-right is-4 is-vertical card-margin">
@@ -136,10 +145,27 @@
 			</div>
 		</section>
 
-		<google-map fit-to-markers api-key="AIzaSyD3E1D9b-Z7ekrT3tbhl_dy8DCXuIuDDRc">
+		<google-map fit-to-markers zoom="18" api-key="AIzaSyD3E1D9b-Z7ekrT3tbhl_dy8DCXuIuDDRc">
 			<google-map-marker latitude="41.315118" longitude="69.267266" draggable="true"></google-map-marker>
 		</google-map>
 	</article>
+
+	<footer class="footer">
+	  <div class="container">
+	    <div class="content has-text-centered">
+	      <p>
+	        <span class="big-font-size pobeda">ТАШКЕНТЪ</span> by <a href="http://github.com/MrPark97">MrPark97</a>. The source code is licensed
+	        <a href="http://opensource.org/licenses/mit-license.php">MIT</a>. The website content
+	        is licensed <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC ANS 4.0</a>.
+	      </p>
+	      <p>
+	        <a class="icon" href="http://github.com/MrPark97/historia">
+	          <i class="fa fa-github"></i>
+	        </a>
+	      </p>
+	    </div>
+	  </div>
+	</footer>
 
 	<script>
 		$(document).ready(function() {
