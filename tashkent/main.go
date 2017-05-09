@@ -37,6 +37,7 @@ func init() {
 func main() {
 	http.HandleFunc("/", homePage)
 	http.HandleFunc("/article", articlePage)
+	http.HandleFunc("/section", sectionPage)
 	http.Handle("/static/", http.StripPrefix("/static/", http.FileServer(http.Dir("static/"))))
     http.Handle("/bower_components/", http.StripPrefix("/bower_components/", http.FileServer(http.Dir("bower_components/"))))
 	err := http.ListenAndServe(":"+port, nil)
@@ -64,6 +65,22 @@ func homePage(w http.ResponseWriter, r *http.Request) {
 
 func articlePage(w http.ResponseWriter, r *http.Request) {
     template_name := "article.tpl"
+
+    data := struct{}{}
+
+    t, err := template.ParseFiles("templates/" + template_name)
+    if err != nil {
+        log.Println("template error", err)
+    }
+
+    err = t.Execute(w, data)
+    if err != nil {
+        log.Println("template print error", err)    
+    }
+}
+
+func sectionPage(w http.ResponseWriter, r *http.Request) {
+    template_name := "section.tpl"
 
     data := struct{}{}
 
