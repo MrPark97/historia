@@ -1,0 +1,21 @@
+{
+  "name": "tashkent",
+  "homepage": "https://github.com/MrPark97/historia",
+  "authors": [
+    "MrPark97 <evgeniy.pak.97@mail.ru>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "webcomponentsjs": "webcomponents/webcomponentsjs#^0.7.24",
+    "google-map": "GoogleWebComponents/google-map#^1.2.0"
+  }
+}

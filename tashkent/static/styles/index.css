@@ -34,3 +34,7 @@ p {
 	margin-bottom: 25px;
 	margin-left: 5px;
 }
+
+google-map {
+  height: 300px;
+}
