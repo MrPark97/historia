@@ -60,3 +60,8 @@ footer {
 	vertical-align: middle;
 	font-size: 50px;
 }
+
+.search-field {
+	padding-top: 0px;
+	overflow: hidden !important;
+}

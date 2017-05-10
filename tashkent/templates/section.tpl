@@ -8,7 +8,10 @@
 
 	<link rel="stylesheet" href="/static/styles/index.css">
     <!-- Polyfill Web Components support for older browsers -->
-    <!-- <script src="/bower_components/webcomponentsjs/webcomponents-lite.min.js"></script> -->
+    <script src="/bower_components/webcomponentsjs/webcomponents-lite.min.js"></script>
+
+    <link rel="import" href="/bower_components/paper-input/paper-input.html">
+    <link rel="import" href="/bower_components/iron-icons/iron-icons.html">
 
 
 </head>
@@ -24,12 +27,12 @@
 	  <div class="nav-center">
 	    <a class="nav-item">
 	      <span class="icon">
-	        <i class="fa fa-github"></i>
+	        <i class="fa fa-instagram"></i>
 	      </span>
 	    </a>
 	    <a class="nav-item">
 	      <span class="icon">
-	        <i class="fa fa-linkedin"></i>
+	        <i class="fa fa-telegram"></i>
 	      </span>
 	    </a>
 	  </div>
@@ -55,8 +58,26 @@
 	      Статьи
 	    </a>
 
-	    <div class="nav-item">
-	      <div class="field is-grouped">
+	    <div class="nav-item search-field">
+	      <div class="field">
+		      <style>
+		        paper-input {
+		          max-width: 400px;
+		          margin: auto;
+		          text-align: left;
+		        }
+		        iron-icon, div[suffix] {
+		          color: hsl(0, 0%, 50%);
+		          margin-right: 12px;
+		        }
+		      </style>
+		      <paper-input label="поиск">
+		        <iron-icon icon="search" prefix></iron-icon>
+		      </paper-input>
+	      </div>
+
+
+	      <!-- <div class="field is-grouped">
 	        <p class="control">
 	          <a class="button" >
 	            <span class="icon">
@@ -73,7 +94,7 @@
 	            <span>Instagram</span>
 	          </a>
 	        </p>
-	      </div>
+	      </div> -->
 	    </div>
 	  </div>
 	</nav>
@@ -87,7 +108,7 @@
 			</div>
 		</section>
 
-		<div class="tabs is-centered is-large">
+		<div class="tabs is-centered is-large is-hidden-touch">
 		  <ul>
 		    <li>
 		      <a>
@@ -99,6 +120,29 @@
 		      <a>
 		        <span class="icon is-small"><i class="fa fa-address-card-o"></i></span>
 		        <span>Выдающиеся деятели</span>
+		      </a>
+		    </li>
+		    <li>
+		      <a>
+		        <span class="icon is-small"><i class="fa fa-newspaper-o"></i></span>
+		        <span>События</span>
+		      </a>
+		    </li>
+		  </ul>
+		</div>
+
+		<div class="tabs is-centered is-hidden-desktop">
+		  <ul>
+		    <li>
+		      <a>
+		        <span class="icon is-small"><i class="fa fa-university"></i></span>
+		        <span>Архитектура</span>
+		      </a>
+		    </li>
+		    <li>
+		      <a>
+		        <span class="icon is-small"><i class="fa fa-address-card-o"></i></span>
+		        <span>Деятели</span>
 		      </a>
 		    </li>
 		    <li>
@@ -201,6 +245,24 @@
 				    </nav>
 				  </div>
 				</article>
+
+				<section class="section">
+					<nav class="pagination">
+					  <a class="pagination-previous" title="This is the first page" disabled>Previous</a>
+					  <a class="pagination-next">Next page</a>
+					  <ul class="pagination-list">
+					    <li>
+					      <a class="pagination-link is-current">1</a>
+					    </li>
+					    <li>
+					      <a class="pagination-link">2</a>
+					    </li>
+					    <li>
+					      <a class="pagination-link">3</a>
+					    </li>
+					  </ul>
+					</nav>
+				</section>
 			</div>
 		</section>
 	</article>
@@ -225,22 +287,12 @@
 	<script>
 		$(document).ready(function() {
 			$('.nav-toggle').click(function() {
-				if($('.nav-toggle').hasClass('is-active')) {
+				if($(this).hasClass('is-active')) {
 					$('.nav-menu').removeClass('is-active');
-					$('.nav-toggle').removeClass('is-active');
+					$(this).removeClass('is-active');
 				} else {
 					$('.nav-menu').addClass('is-active');
-					$('.nav-toggle').addClass('is-active');
-				}
-			});
-
-			$('.nav-toggle').click(function() {
-				if($('.nav-toggle').hasClass('is-active')) {
-					$('.nav-menu').removeClass('is-active');
-					$('.nav-toggle').removeClass('is-active');
-				} else {
-					$('.nav-menu').addClass('is-active');
-					$('.nav-toggle').addClass('is-active');
+					$(this).addClass('is-active');
 				}
 			});
 			$('.tabs li').click(function() {
