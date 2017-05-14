@@ -13,6 +13,10 @@ type Config struct {
 	Port string `yaml:"port"`
 }
 
+var (
+    port = os.Getenv("PORT")
+)
+
 func init() {
 	yamlFile, err := ioutil.ReadFile("./config.yaml")
 
@@ -27,9 +31,6 @@ func init() {
         log.Println("Error while unmarshalling config ", err)
     }
     
-
-    port := os.Getenv("PORT")
-
     if port=="" {
         port = config.Port
     }
