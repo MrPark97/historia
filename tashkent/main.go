@@ -8,10 +8,6 @@ import (
 	"gopkg.in/yaml.v2"
 )
 
-var (
-	port = "8000"
-)
-
 type Config struct {
 	Port string `yaml:"port"`
 }
@@ -29,8 +25,13 @@ func init() {
     if err != nil {
         log.Println("Error while unmarshalling config ", err)
     }
+    
 
-    port = config.Port
+    port := os.Getenv("PORT")
+
+    if port=="" {
+        port = config.Port
+    }
 }
 
 
