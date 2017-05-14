@@ -43,7 +43,6 @@
 
 		#first-section h1 {
 			top: 50%;
-			color: #fff;
 			transform: translateY(-100%);
 			position: relative;
 		}
@@ -61,14 +60,12 @@
 
 		#second-section h1 {
 			top: 50%;
-			color: #fff;
 			transform: translateY(-100%);
 			position: relative;
 		}
 
 		#third-section h1 {
 			top: 50%;
-			color: #fff;
 			transform: translateY(-100%);
 			position: relative;
 		}
@@ -89,6 +86,9 @@
 			display: block;
 			font-size: 35px;
 			font-weight: normal;
+		}
+		h1 a {
+			color: #fff;
 		}
 	</style>
 </head>
@@ -159,17 +159,18 @@
 	</nav>
 
 	<div id="fullpage">
-		<div id="first-section" class="section"><h1 class="pobeda">ТАШКЕНТЪ <span>1985-1917 гг.</span></h1></div>
-		<div id="second-section" class="section"><h1 class="pobeda">ТАШКЕНТ <span>1917-1991 гг.</span></h1></div>
-		<div id="third-section" class="section"><h1 class="pobeda">TOSHKENT <span>1991-2017</span></h1></div>
+		<div id="first-section" class="section"><h1 class="pobeda"><a href="/russian">ТАШКЕНТЪ <span>1985-1917 гг.</span></a></h1></div>
+		<div id="second-section" class="section"><h1 class="pobeda"><a href="/soviet">ТАШКЕНТ <span>1917-1991 гг.</span></h1></a></div>
+		<div id="third-section" class="section"><h1 class="pobeda"><a href="/uzbek">TOSHKENT <span>1991-2017</span></h1></a></div>
 	</div>
 
 	<script>
 		$(document).ready(function() {
 			$('#fullpage').fullpage({
 				verticalCentered: false,
-
+				anchors:['russian', 'soviet', 'uzbek'],
 				css3: false
+
 			});
 
 			$('.nav-toggle').click(function() {
