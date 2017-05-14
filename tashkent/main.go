@@ -6,6 +6,7 @@ import (
 	"io/ioutil"
 	"text/template"
 	"gopkg.in/yaml.v2"
+    "os"
 )
 
 type Config struct {
