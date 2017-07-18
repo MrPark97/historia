@@ -6,7 +6,7 @@
 	<link rel="stylesheet" href="/static/styles/bulma.css">
 	<script src="/static/js/jquery.min.js"></script>
 
-	<link rel="stylesheet" href="/static/styles/index.css">
+	<link rel="stylesheet" href="/static/styles/index2.css">
     <!-- Polyfill Web Components support for older browsers -->
     <script src="/bower_components/webcomponentsjs/webcomponents-lite.min.js"></script>
     
