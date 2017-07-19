@@ -70,6 +70,7 @@
 		          color: hsl(0, 0%, 50%);
 		          margin-right: 12px;
 		        }
+		        
 		      </style>
 		      <paper-input label="поиск">
 		        <iron-icon icon="search" prefix></iron-icon>

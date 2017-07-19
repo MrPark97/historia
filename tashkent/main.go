@@ -41,7 +41,7 @@ func main() {
 	http.HandleFunc("/", homePage)
 	http.HandleFunc("/article", articlePage)
 	http.HandleFunc("/soviet", sovietPage)
-	http.HandleFunc("/russian", russianPage)
+	http.HandleFunc("/imperial", imperialPage)
 	http.HandleFunc("/uzbek", uzbekPage)
 	http.Handle("/static/", http.StripPrefix("/static/", http.FileServer(http.Dir("static/"))))
     http.Handle("/bower_components/", http.StripPrefix("/bower_components/", http.FileServer(http.Dir("bower_components/"))))
@@ -116,8 +116,8 @@ func uzbekPage(w http.ResponseWriter, r *http.Request) {
     }
 }
 
-func russianPage(w http.ResponseWriter, r *http.Request) {
-    template_name := "russian.tpl"
+func imperialPage(w http.ResponseWriter, r *http.Request) {
+    template_name := "imperial.tpl"
 
     data := struct{}{}
 
