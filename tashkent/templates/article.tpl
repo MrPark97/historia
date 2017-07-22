@@ -17,7 +17,6 @@
     <link rel="import" href="/bower_components/paper-input/paper-input.html">
     <link rel="import" href="/bower_components/iron-icons/iron-icons.html">
     <link rel="import" href="/bower_components/google-map/google-map.html"> 
-    <link rel="import" href="/bower_components/google-streetview-pano/google-streetview-pano.html"> 
 </head>
 <body>
 	<nav class="nav">
