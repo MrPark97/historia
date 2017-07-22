@@ -97,8 +97,13 @@
 			      <b>Спасо-Преображенский собор</b> (Ташкент) — снесённый православный собор Ташкентской и Узбекистанской епархии Среднеазиатского митрополичьего округа Русской православной церкви.
 			    </div>
 			  </div>
+
+		      <google-map fit-to-markers zoom="18" api-key="AIzaSyD3E1D9b-Z7ekrT3tbhl_dy8DCXuIuDDRc">
+		  	    <google-map-marker latitude="41.315118" longitude="69.267266" draggable="true"></google-map-marker>
+		      </google-map>
 			  
 			</div>
+			
 		  </div>
 		  <section class="section">
 		  	<div class="content main-content">
@@ -128,10 +133,6 @@
 			</div>
 		  </section>
 		</div>
-
-		<google-map fit-to-markers zoom="18" api-key="AIzaSyD3E1D9b-Z7ekrT3tbhl_dy8DCXuIuDDRc">
-			<google-map-marker latitude="41.315118" longitude="69.267266" draggable="true"></google-map-marker>
-		</google-map>
 	</article>
 
 	<footer class="footer">
