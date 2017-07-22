@@ -15,6 +15,7 @@ type Config struct {
 
 var (
     port = os.Getenv("PORT")
+    wow_slider_template_name = "wowslider.tpl"
 )
 
 func init() {
@@ -73,7 +74,7 @@ func articlePage(w http.ResponseWriter, r *http.Request) {
 
     data := struct{}{}
 
-    t, err := template.ParseFiles("templates/" + template_name)
+    t, err := template.ParseFiles("templates/" + template_name, "templates/"+wow_slider_template_name)
     if err != nil {
         log.Println("template error", err)
     }
