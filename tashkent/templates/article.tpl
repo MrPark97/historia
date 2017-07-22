@@ -130,8 +130,6 @@
 		  </section>
 		</div>
 
-		
-
 		<google-map fit-to-markers zoom="18" api-key="AIzaSyD3E1D9b-Z7ekrT3tbhl_dy8DCXuIuDDRc">
 			<google-map-marker latitude="41.315118" longitude="69.267266" draggable="true"></google-map-marker>
 		</google-map>
