@@ -12,6 +12,7 @@
     <!-- Polyfill Web Components support for older browsers -->
     <script src="/bower_components/webcomponentsjs/webcomponents-lite.min.js"></script>
 
+    <!-- Import element -->
     <link rel="import" href="/bower_components/paper-input/paper-input.html">
     <link rel="import" href="/bower_components/iron-icons/iron-icons.html">
     <link rel="stylesheet" href="/static/css/index2.css">
@@ -75,41 +76,43 @@
 	</nav>
 
 	<article>
+		<style is="custom-style">
+		  paper-input {
+		    max-width: 400px;
+		    margin: auto;
+		  }
+		  paper-input.search {
+		  	--paper-input-container-color: var(--paper-grey-300);
+		    --paper-input-container-focus-color: var(--paper-grey-200);
+		    --paper-input-container-invalid-color: #ffffff;
+		    --paper-input-container-input-color: #ffffff;
+		    --primary-color: var(--paper-grey-900);
+		  }
+		  iron-icon, div[suffix] {
+		    color: white;
+		    margin-right: 12px;
+		  }
+		</style>
+	
 		<section id="imperial-epoch-hero" class="epoch-hero hero">
 		  <div class="hero-body has-text-centered">
 		    <div class="container">
-		      <img src="/static/img/tashkentimperial.gif">
+		      <img src="/static/img/imperial1.png">
 
 		      <div id="search" class="has-text-left is-overlay is-hidden-mobile">
-			      <style is="custom-style">
-			        paper-input {
-			          max-width: 400px;
-			          margin: auto;
-			        }
-			        iron-icon, div[suffix] {
-			          color: white;
-			          margin-right: 12px;
-			        }
-
-			        :root {
-			        	--primary-color: var(--paper-grey-300);
-			        	--light-theme-background-color: var(--paper-grey-900);
-			        	--light-theme-base-color: #ffffff;
-			        	--light-theme-text-color: #ffffff;
-			        	--light-theme-secondary-color: #fff;  /* for secondary text and icons */
-			        	--light-theme-disabled-color: #646464;  /* disabled/hint text */
-			        	--light-theme-divider-color: #3c3c3c;
-			        }
-			      </style>
-			      <paper-input label="поиск">
+		      	<form method="POST">
+			      <paper-input class="search" label="поиск" required>
 			        <iron-icon icon="search" prefix></iron-icon>
 			      </paper-input>
+			    </form>
 		      </div>
 
 		      <div id="search" class="has-text-left is-hidden-tablet">
-			      <paper-input label="поиск">
+		      	<form method="POST">
+			      <paper-input class="search" label="поиск" required>
 			        <iron-icon icon="search" prefix></iron-icon>
 			      </paper-input>
+			    </form>
 		      </div>
 		    </div>
 		  </div>

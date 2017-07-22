@@ -39,3 +39,12 @@ footer {
 #search {
 	left: auto;
 }
+
+.main-content {
+	text-align: justify;
+}
+
+.card-wrapper {
+	margin: 20px;
+	margin-top: 40px;
+}
