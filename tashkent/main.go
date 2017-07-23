@@ -41,6 +41,7 @@ func init() {
 func main() {
 	http.HandleFunc("/", homePage)
 	http.HandleFunc("/article", articlePage)
+    http.HandleFunc("/resize", resizePage)
 	http.HandleFunc("/soviet", sovietPage)
 	http.HandleFunc("/imperial", imperialPage)
 	http.HandleFunc("/uzbek", uzbekPage)

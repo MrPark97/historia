@@ -8,7 +8,6 @@
 	<link rel="stylesheet" href="/static/css/font-awesome.min.css">
 	<link rel="stylesheet" href="/static/css/bulma.css">
 	<!-- <script src="/static/js/jquery.min.js"></script> -->
-	<script src="/static/js/jquery1.8.3.min.js"></script>
 
 	<link rel="stylesheet" href="/static/css/index2.css">
     <!-- Polyfill Web Components support for older browsers -->
