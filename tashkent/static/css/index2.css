@@ -56,3 +56,11 @@ google-map {
 .slider-section {
 	padding-top: 0px;
 }
+
+.sponsors-section img {
+	height: 200px;
+}
+
+.sponsors-section .title {
+	font-size: 1.5em;
+}

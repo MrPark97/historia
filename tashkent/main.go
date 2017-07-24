@@ -45,8 +45,10 @@ func main() {
 	http.HandleFunc("/soviet", sovietPage)
 	http.HandleFunc("/imperial", imperialPage)
 	http.HandleFunc("/uzbek", uzbekPage)
+    http.HandleFunc("/about", aboutPage)
 	http.Handle("/static/", http.StripPrefix("/static/", http.FileServer(http.Dir("static/"))))
     http.Handle("/bower_components/", http.StripPrefix("/bower_components/", http.FileServer(http.Dir("bower_components/"))))
+    http.Handle("/node_modules/", http.StripPrefix("/node_modules/", http.FileServer(http.Dir("node_modules/"))))
 	err := http.ListenAndServe(":"+port, nil)
 	if err != nil {
 		log.Fatal("Error starting server: ", err)
@@ -120,6 +122,22 @@ func uzbekPage(w http.ResponseWriter, r *http.Request) {
 
 func imperialPage(w http.ResponseWriter, r *http.Request) {
     template_name := "imperial.tpl"
+
+    data := struct{}{}
+
+    t, err := template.ParseFiles("templates/" + template_name)
+    if err != nil {
+        log.Println("template error", err)
+    }
+
+    err = t.Execute(w, data)
+    if err != nil {
+        log.Println("template print error", err)    
+    }
+}
+
+func aboutPage(w http.ResponseWriter, r *http.Request) {
+    template_name := "about.tpl"
 
     data := struct{}{}
 

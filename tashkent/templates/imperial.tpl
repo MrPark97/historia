@@ -6,8 +6,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 	<link rel="stylesheet" href="/static/css/font-awesome.min.css">
-	<link rel="stylesheet" href="/static/css/bulma.css">
-	<script src="/static/js/jquery.min.js"></script>
+	<link rel="stylesheet" href="/node_modules/bulma/css/mybulma.css">
+	<script src="/node_modules/jquery/dist/jquery.min.js"></script>
 
     <!-- Polyfill Web Components support for older browsers -->
     <script src="/bower_components/webcomponentsjs/webcomponents-lite.min.js"></script>
