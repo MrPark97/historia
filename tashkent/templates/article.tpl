@@ -12,11 +12,11 @@
 	<link rel="stylesheet" href="/static/css/index2.css">
     <!-- Polyfill Web Components support for older browsers -->
     <script src="/bower_components/webcomponentsjs/webcomponents-lite.min.js"></script>
-    
+
     <!-- Import element -->
     <link rel="import" href="/bower_components/paper-input/paper-input.html">
     <link rel="import" href="/bower_components/iron-icons/iron-icons.html">
-    <link rel="import" href="/bower_components/google-map/google-map.html"> 
+    <link rel="import" href="/bower_components/google-map/google-map.html">
 </head>
 <body>
 	<nav class="nav">
@@ -101,14 +101,14 @@
 		      <google-map fit-to-markers zoom="18" api-key="AIzaSyD3E1D9b-Z7ekrT3tbhl_dy8DCXuIuDDRc">
 		  	    <google-map-marker latitude="41.315118" longitude="69.267266" draggable="true"></google-map-marker>
 		      </google-map>
-			  
+
 			</div>
-			
+
 		  </div>
 		  <section class="section">
 		  	<div class="content main-content">
 				<h3 class="title is-spaced pobeda-bold">Описание и история</h3>
-			
+
 				<p>Был расположен на центральной площади в Ташкенте, получившей вследствие этого наименование Соборная площадь. Престольный праздник — 11 июля 1988 года.</p>
 
 				<p>Здание собора было сложено из серо-жёлтого жжённого кирпича и не было ни оштукатурено, ни покрашено (побелено), как и многие другие значимые, в первую очередь административные, здания города — так называемый туркестанский стиль. Здание собора, выполненное в византийском стиле, было трёхпрестольное: главный — в память Преображения Господня, северный — во имя Св. Благоверного князя Александра Невского и Св. Равноапостольной Мироносицы Марии Магдалины, южный — во имя Равноапостольного князя Владимира и Св. Николая Чудотворца. Иконостасы всех трёх алтарей с иконами исполнены академиком М. О. Микешиным. Внутренность собора поражала современников своими лепными работами — резьбой по ганчу (сырому алебастру), выполненной местными мастерами резчиками, сами же стены обращали на себя внимание многочисленными надписями из текста Священного Писания. Вмещал собор до 1500 человек. Трёхъярусная колокольня была устроена отдельно от собора.</p>

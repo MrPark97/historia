@@ -1,0 +1,70 @@
+@font-face {
+    font-family: Pobeda;
+    src: url('../fonts/pobeda-bold.ttf');
+  	font-weight: bold;
+}
+
+@font-face {
+    font-family: Pobeda;
+    src: url('../fonts/pobeda-regular.ttf');
+}
+
+body {
+  height: auto;
+}
+
+.logo-text {
+	font-size: 1.3em;
+}
+
+.pobeda {
+	font-family: pobeda;
+}
+
+.epoch-hero .hero-body {
+	padding: 8px;
+}
+
+.epoch-hero .hero-body img {
+	height: 120px;
+}
+
+#imperial-epoch-hero .hero-body {
+	background-image: linear-gradient(rgba(158,158,158, 0.8),rgba(158,158,158, 0.8)), url('../img/imperialhero.jpg');
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+
+footer {
+	padding-bottom: 3em !important;
+}
+
+#search {
+	left: auto;
+}
+
+.main-content {
+	text-align: justify;
+}
+
+.card-wrapper {
+	margin: 20px;
+	margin-top: 40px;
+}
+
+google-map {
+	height: 300px;
+}
+
+.slider-section {
+	padding-top: 0px;
+}
+
+.sponsors-section img {
+	height: 200px;
+}
+
+.sponsors-section .title {
+	font-size: 1.5em;
+}

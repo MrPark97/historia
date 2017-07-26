@@ -154,7 +154,7 @@
 			            <br>
 			            <small>
 			              <a href="https://github.com/MrPark97"><span class="icon"><i class="fa fa-github"></i></span> Github</a>
-			              <a href="https://github.com/MrPark97"><span class="icon"><i class="fa fa-linkedin-square"></i></span> LinkedIn</a>
+			              <a href="https://www.linkedin.com/in/evgeniy-park-a12a10100/"><span class="icon"><i class="fa fa-linkedin-square"></i></span> LinkedIn</a>
 			            </small>
 			          </div>
 			        </div>
