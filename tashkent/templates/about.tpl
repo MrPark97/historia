@@ -184,7 +184,7 @@
 		      	<p class="title"><a href="#">Uzbekistan</a></p>
 		      </div>
 		    </div>
-		    
+
 		  </nav>
 		</section>
 	</article>

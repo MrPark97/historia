@@ -101,4 +101,15 @@ class MainController extends Controller
 
     }
 
+    public function about(Request $request, string $locale)
+
+    {
+      $path = substr($request->path(), 2);
+
+      App::setLocale($locale);
+
+      return view('layouts.about', compact('path'));
+
+    }
+
 }

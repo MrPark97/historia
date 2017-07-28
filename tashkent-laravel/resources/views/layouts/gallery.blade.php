@@ -12,15 +12,19 @@
   </section>
   <section class="section">
     <div class="container">
-      <div class="columns has-text-centered">
-        @foreach($images as $image)
-          <div class="column">
-              <a href="/img/gallery/{{$image['file_name']}}" data-fancybox="gallery" data-caption="{{$image['description_'.app()->getLocale()]}}">
-              	   <img src="/img/thumbnails/{{$image['file_name']}}" alt="{{$image['description_'.app()->getLocale()]}}" />
-              </a>
+      @for($i = 0; $i < count($images); $i++)
+        @if($i%4==0)
+          <div class="columns has-text-centered">
+        @endif
+            <div class="column is-3-tablet">
+                <a href="/img/gallery/{{$images[$i]['file_name']}}" data-fancybox="gallery" data-caption="{{$images[$i]['description_'.app()->getLocale()]}}">
+                	   <img src="/data0/images/{{$images[$i]['file_name']}}" alt="{{$images[$i]['description_'.app()->getLocale()]}}" />
+                </a>
+            </div>
+        @if($i%4==3 or $i==(count($images)-1))
           </div>
-        @endforeach
-      </div>
+        @endif
+      @endfor
     </div>
   </section>
 

@@ -89,16 +89,41 @@
 
 	<footer class="footer">
 	  <div class="container">
-	    <div class="content has-text-centered">
-	      <p>
-	        <span class="big-font-size pobeda">ТАШКЕНТЪ</span> by <a href="http://github.com/MrPark97">MrPark97</a>. The source code is licensed
-	        <a href="http://opensource.org/licenses/mit-license.php">MIT</a>.
-	      </p>
-	      <p>
-	        <a class="icon" href="http://github.com/MrPark97/historia">
-	          <i class="fa fa-github"></i>
-	        </a>
-	      </p>
+	    <div class="content columns ">
+	      <div class="column is-6-tablet">
+					<h4><a href="{{config()->get('app.proto')}}{{config()->get('app.hostname')}}/{{app()->getLocale()}}/about">@lang('messages.about')</a></h4><br />
+	        <p><span class="big-font-size pobeda">ТАШКЕНТЪ</span> by <a href="http://github.com/MrPark97">MrPark97</a>.<br />The source code is licensed
+	        <a href="http://opensource.org/licenses/mit-license.php">MIT</a>.</p>
+					<p>
+		        <a class="icon" href="http://github.com/MrPark97/historia">
+		          <i class="fa fa-github"></i>
+		        </a>
+					</p>
+	      </div>
+	      <div class="column is-6-tablet">
+					<h4 class="muller"><strong>@lang('messages.links')</strong></h4>
+					<p>
+						<a href="#">
+							<span class="icon">
+							  <i class="fa fa-instagram"></i>
+							</span> Instagram
+						</a>
+					</p>
+					<p>
+						<a href="#">
+							<span class="icon">
+							  <i class="fa fa-telegram"></i>
+							</span> Telegram
+						</a>
+					</p>
+					<p>
+						<a href="#">
+							<span class="icon">
+							  <i class="fa fa-facebook-official"></i>
+							</span> Facebook
+						</a>
+					</p>
+	      </div>
 	    </div>
 	  </div>
 	</footer>

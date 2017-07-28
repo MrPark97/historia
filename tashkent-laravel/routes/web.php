@@ -20,3 +20,5 @@ Route::domain('{epoch}.'.config()->get('app.hostname'))->group(function () {
 Route::get('/{locale?}', 'MainController@index');
 
 Route::get('/{locale}/gallery', 'MainController@gallery');
+
+Route::get('/{locale}/about', 'MainController@about');
