@@ -12,7 +12,7 @@
     </head>
     <body>
         <div id="index" class="tile is-ancestor is-hidden-mobile">
-            <a href="{{config()->get('app.proto')}}imperial.{{config()->get('app.hostname')}}" class="tile is-4 is-parent">
+            <a href="{{config()->get('app.proto')}}imperial.{{config()->get('app.hostname')}}/{{app()->getLocale()}}" class="tile is-4 is-parent">
                 <div id="imperial" class="tile is-child">
                     <div class="title">
                         <h1>ТАШКЕНТЪ</h1>
@@ -22,7 +22,7 @@
                 </div>
             </a>
 
-            <a href="{{config()->get('app.proto')}}soviet.{{config()->get('app.hostname')}}" class="tile is-4 is-parent">
+            <a href="{{config()->get('app.proto')}}soviet.{{config()->get('app.hostname')}}/{{app()->getLocale()}}" class="tile is-4 is-parent">
                 <div id="soviet" class="tile is-child">
                     <div class="title">
                         <h1>ТАШКЕНТ</h1>
@@ -32,7 +32,7 @@
                 </div>
             </a>
 
-            <a href="{{config()->get('app.proto')}}uzbek.{{config()->get('app.hostname')}}" class="tile is-4 is-parent">
+            <a href="{{config()->get('app.proto')}}uzbek.{{config()->get('app.hostname')}}/{{app()->getLocale()}}" class="tile is-4 is-parent">
                 <div id="uzbek" class="tile is-child">
                     <div class="title">
                         <h1>TOSHKENT</h1>
@@ -44,7 +44,7 @@
         </div>
 
         <div id="index" class="tile is-ancestor is-vertical is-hidden-tablet">
-            <a href="{{config()->get('app.proto')}}imperial.{{config()->get('app.hostname')}}" class="tile is-4 is-parent">
+            <a href="{{config()->get('app.proto')}}imperial.{{config()->get('app.hostname')}}/{{app()->getLocale()}}" class="tile is-4 is-parent">
                 <div id="imperial" class="tile is-child">
                     <div class="title">
                         <h1>ТАШКЕНТЪ</h1>
@@ -55,7 +55,7 @@
                 </div>
             </a>
 
-            <a href="{{config()->get('app.proto')}}soviet.{{config()->get('app.hostname')}}" class="tile is-4 is-parent">
+            <a href="{{config()->get('app.proto')}}soviet.{{config()->get('app.hostname')}}/{{app()->getLocale()}}" class="tile is-4 is-parent">
                 <div id="soviet" class="tile is-child">
                     <div class="title">
                         <h1>ТАШКЕНТ</h1>
@@ -66,7 +66,7 @@
                 </div>
             </a>
 
-            <a href="{{config()->get('app.proto')}}uzbek.{{config()->get('app.hostname')}}" class="tile is-4 is-parent">
+            <a href="{{config()->get('app.proto')}}uzbek.{{config()->get('app.hostname')}}/{{app()->getLocale()}}" class="tile is-4 is-parent">
                 <div id="uzbek" class="tile is-child">
                     <div class="title">
                         <h1>TOSHKENT</h1>

@@ -12,11 +12,11 @@
 */
 
 Route::domain('{epoch}.'.config()->get('app.hostname'))->group(function () {
-    Route::get('/{locale?}', 'MainController@index');
-    Route::get('/{locale?}/lol', 'MainController@lol');
+    Route::get('/{locale?}', 'MainController@epoch');
+    Route::get('/{locale}/{category}', 'MainController@epoch');
+    Route::get('/{locale}/{category}/{id}', 'MainController@show');
 });
 
+Route::get('/{locale?}', 'MainController@index');
 
-Route::get('/', function () {
-    return view('index');
-});
+Route::get('/{locale}/gallery', 'MainController@gallery');

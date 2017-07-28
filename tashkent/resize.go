@@ -50,12 +50,18 @@ func resizePage(w http.ResponseWriter, r *http.Request) {
 	    }
 
 	    sliderImageFill := imaging.Fill(src, 830, 360, imaging.Center, imaging.Lanczos)
-	    err = imaging.Save(sliderImageFill, fmt.Sprintf("./static/data0/images/%s%s%s", handler.Filename, "830x360", ".jpg"))
+	    err = imaging.Save(sliderImageFill, fmt.Sprintf("./static/data0/images/%s", handler.Filename))
 	    if err != nil {
 	        log.Fatalf("Save failed: %v", err)
 	    }
 	    tooltipImageFill := imaging.Fill(src, 110, 48, imaging.Center, imaging.Lanczos)
-	    err = imaging.Save(tooltipImageFill, fmt.Sprintf("./static/data0/tooltips/%s%s%s", handler.Filename, "110x48", ".jpg"))
+	    err = imaging.Save(tooltipImageFill, fmt.Sprintf("./static/data0/tooltips/%s", handler.Filename))
+	    if err != nil {
+	        log.Fatalf("Save failed: %v", err)
+	    }
+
+			thumbnailImageFill := imaging.Fill(src, 128, 128, imaging.Center, imaging.Lanczos)
+	    err = imaging.Save(thumbnailImageFill, fmt.Sprintf("./static/img/thumbnails/%s", handler.Filename))
 	    if err != nil {
 	        log.Fatalf("Save failed: %v", err)
 	    }

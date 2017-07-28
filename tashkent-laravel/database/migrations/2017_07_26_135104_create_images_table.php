@@ -22,6 +22,11 @@ class CreateImagesTable extends Migration
 
             $table->string('imageable_type');
 
+            $table->text('description_ru');
+            $table->text('description_en');
+            $table->text('description_de');
+            $table->text('description_uz');
+
             $table->timestamps();
         });
     }

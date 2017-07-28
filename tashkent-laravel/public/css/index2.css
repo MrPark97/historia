@@ -9,6 +9,17 @@
     src: url('../fonts/pobeda-regular.ttf');
 }
 
+@font-face {
+  font-family: Muller;
+  src: url('../fonts/muller-thin.ttf');
+}
+
+@font-face {
+  font-family: Muller;
+  src: url('../fonts/muller-extrabold.ttf');
+  font-weight: bold;
+}
+
 body {
   height: auto;
 }
@@ -18,7 +29,11 @@ body {
 }
 
 .pobeda {
-	font-family: pobeda;
+	font-family: Pobeda;
+}
+
+.muller {
+	font-family: Muller;
 }
 
 .epoch-hero .hero-body {
@@ -31,6 +46,20 @@ body {
 
 #imperial-epoch-hero .hero-body {
 	background-image: linear-gradient(rgba(158,158,158, 0.8),rgba(158,158,158, 0.8)), url('../img/imperialhero.jpg');
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+
+#soviet-epoch-hero .hero-body {
+	background-image: linear-gradient(rgba(244,67,54, 0.8),rgba(244,67,54, 0.8)), url('../img/soviethero.jpg');
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+
+#uzbek-epoch-hero .hero-body {
+	background-image: linear-gradient(rgba(76,175,80, 0.8),rgba(76,175,80, 0.8)), url('../img/uzbekhero.jpg');
 	background-size: cover;
 	background-position: center center;
 	background-repeat: no-repeat;
@@ -67,4 +96,12 @@ google-map {
 
 .sponsors-section .title {
 	font-size: 1.5em;
+}
+
+.tabs .muller {
+  font-weight: bold;
+}
+
+.author-name {
+  text-transform: uppercase;
 }
