@@ -88,11 +88,11 @@ class MainController extends Controller
       $article;
 
       if($category == "architecture") {
-        $article = Architecture::find($id);
+        $article = Architecture::where('epoch_name', $epoch)->where('id', $id)->firstOrFail();
       } else  if($category == "individuals") {
-        $article = Individual::find($id);
+        $article = Individual::where('epoch_name', $epoch)->where('id', $id)->firstOrFail();
       } else if($category == "events") {
-        $article = Event::find($id);
+        $article = Event::where('epoch_name', $epoch)->where('id', $id)->firstOrFail();
       }
 
       $article->toArray();
